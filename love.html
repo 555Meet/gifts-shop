@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+    <title>products images</title>
+    <link rel="stylesheet" href="css/love.css">
+    <style>
+.dropbtn {
+  background-color: #c28f95;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: white; color: black;}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top-bar">GET 10% OFF WITH CODE WELCOME10</div>
+        <nav class="navbar" id="navbar_one">
+            <!-- Hamburger for mobile -->
+            <div class="hamburger" id="hamburger">
+              <div class="line1"></div>
+              <div class="line1"></div>
+              <div class="line1"></div>
+            </div>
+            <!-- Standard nav for desktop -->
+            <ul class="nav-links desktop-nav">
+              <li><a href="home.html">SHOP</a></li>
+              <li><a href="gift.html">GIFTS</a></li>
+              <li><a href="love.html">THE LOVE GIFT</a></li>
+            </ul>
+            <!-- Additional items in mobile nav -->
+            <ul class="nav-links mobile-nav" id="mobile-nav">
+              <li><a href="#home" id="closeham">X</a></li><br>
+              <li><a href="home.html">HOME</a></li>
+              <li><hr></li>
+              <li><a href="gift.html">GIFTS</a></li>
+              <li><hr></li>
+              <li><a href="love.html">THE LOVE GIFT</a></li>
+              <li><hr></li>
+            </ul>
+            <div class="logo">- DOFT -</div>
+            <!-- <div class="icons">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-shopping-bag"></i>
+            </div> -->
+            <div class="dropdown">
+                <button class="dropbtn">SORT ></button>
+                <div class="dropdown-content">
+                  <a href="#" onclick="sortProducts('az')">Sort A-Z</a>
+                  <a href="#" onclick="sortProducts('za')">Sort Z-A</a>
+                  <a href="#" onclick="sortProducts('price')">High Price</a>
+                  <a href="#" onclick="sortProducts('lowprice')">Low Price</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="main-content">
+        <div class="filters">
+            <div class="filter-group">
+                <span>PRICE</span>
+                <i class="fas fa-plus"></i>
+            </div>
+            <div class="filter-group">
+                <span>PRODUCT TYPE</span>
+                <i class="fas fa-plus"></i>
+            </div>
+            <div class="filter-group">
+                <span>SCENT</span>
+                <i class="fas fa-plus"></i>
+            </div>
+            <div class="filter-group">
+                <span>COLOR</span>
+                <i class="fas fa-plus"></i>
+            </div>
+            <div class="filter-group">
+                <span>SORT</span>
+                <i class="fas fa-plus"></i>
+            </div>
+        </div>
+        
+
+        <div class="products pds">
+            <div class="product" data-price="1799">
+                <a href="all.html?name=SECRET+WHISPERS+GLASS+CANDLE+%7C+ROSE+GOLD&price=1799&image=image/love-page/1.1.webp">
+                <img alt="Rose" src="image/love-page/1.1.webp">
+                <div class="name">SECRET WHISPERS GLASS CANDLE | ROSE GOLD
+                </div>
+                <div class="price">RS. 1,799</div>
+                </a>
+            </div>
+            <div class="product" data-price="1799">
+                <a href="all.html?name=RED+SWEETHEART+%7C+PEONY&price=1,799&image=image/love-page/1-2.webp">
+                <img alt="Rose" src="image/love-page/1-2.webp">
+                <div class="name">RED SWEETHEART | PEONY</div>
+                <div class="price">RS. 1,799</div>
+                </a>
+            </div>
+            <div class="product" data-price="1499">
+                <a href="all.html?name=SRED+SWEETHEART+TRIO+%7C+2 HEARTS+&+WAX+TABLETS&pricr=1,499&image=image/love-page/1-3.webp">
+                <img alt="Rose" src="image/love-page/1-3.webp">
+                <div class="name">RED SWEETHEART TRIO | 2 HEARTS &amp; WAX TABLETS</div>
+                <div class="price">RS. 1,499</div>
+                </a>
+            </div>
+            <div class="product" data-price="1599">
+                <a href="all.html?name=MERCURY+GLASS+TRAY+%7C+ROSE+GOLD+%7C+TUBEROSE+&+ORCHID&price=1,599&image=image/love-page/1-4.webp">
+                <img alt="Rose" src="image/love-page/1-4.webp">
+                <div class="name">MERCURY GLASS TRAY | ROSE GOLD | TUBEROSE &amp; ORCHID
+                </div>
+                <div class="price">RS. 1,599</div>
+                </a>
+            </div>
+            <div class="product" data-price="1499">
+                <a href="all.html?name=RED+SWEETHEART+TRIO+%7C+2+HEARTS+&+WAX+TABLETS&price=1,499&image=image/love-page/1-5.webp">
+                <img alt="Rose" src="image/love-page/1-5.webp">
+                <div class="name">RED SWEETHEART TRIO | 2 HEARTS &amp; WAX TABLETS</div>
+                <div class="price">RS. 1,499</div>
+                </a>
+            </div>
+            <div class="product" data-price="1099">
+                <a href="all.html?name=Embrace+Bejeweled+Glass+Candle+&+Love&price=1,099&image=image/love-page/1-6.webp">
+                <img alt="Rose" src="image/love-page/1-6.webp">
+                <div class="name">Embrace Bejeweled Glass Candle &amp; Love</div>
+                <div class="price">RS. 1,099</div>
+                </a>
+            </div>
+            <div class="product" data-price="1099">
+                <a href="all.html?name=Trio+Set+&+Big+Red+Heart&price=1,099&image=image/love-page/1.1.webp">
+                <img alt="Rose" src="image/love-page/1-7.webp">
+                <div class="name">Trio Set & Big Red Heart</div>
+                <div class="price">RS. 1,099</div>
+                </a>
+            </div>
+            <div class="product" data-price="2999">
+                <a href="all.html?name=Embrace+Bejeweled+Glass+Candle+%7C+Peony+&+Blush+%7C+Set+of+2&price=2,999&image=image/love-page/1-8.webp">
+                <img alt="Rose" src="image/love-page/1-8.webp">
+                <div class="name">Embrace Bejeweled Glass Candle | Peony & Blush | Set of 2</div>
+                <div class="price">RS. 2,999</div>
+                </a>
+            </div>
+            <div class="product" data-price="2099">
+                <a href="all.html?name=Rose+Mini+Bowl+%7C+English+Rose&price=2,099&image=image/love-page/1-9.webp">
+                <img alt="Rose" src="image/love-page/1-9.webp">
+                <div class="name">Rose Mini Bowl | English Rose</div>
+                <div class="price">RS. 2,099</div>
+                </a>
+            </div>
+            <div class="product" data-price="1199">
+                <a href="all.html?name=Scented+Memories+%7C+Gift+Set&price=1,199&image=image/love-page/1-10.webp">
+                <img alt="Rose" src="image/love-page/1-10.webp">
+                <div class="name">Scented Memories | Gift Set</div>
+                <div class="price">RS. 1,199</div>
+                </a>
+            </div>
+            <div class="product" data-price="1999">
+                <a href="all.html?name=12+Months+of+Magic+%7C+Shot+Glass+Candles+%7C+Set+of+12&price=1,999&image=image/love-page/1-11.webp">
+                <img alt="Rose" src="image/love-page/1-11.webp">
+                <div class="name">12 Months of Magic | Shot Glass Candles | Set of 12</div>
+                <div class="price">RS. 1,999</div>
+                </a>
+            </div>
+            <div class="product" data-price="2999">
+                <a href="all.html?name=Holiday+Bow+Taper+Candles+%7C+Set+of+2&price=2,999&image=image/love-page/1-12.webp">
+                <img alt="Rose" src="image/love-page/1-12.webp">
+                <div class="name">Holiday Bow Taper Candles | Set of 2</div>
+                <div class="price">RS. 2,999</div>
+                </a>
+            </div>
+            <div class="product" data-price="299">
+                <a href="all.html?name=Bow+Tapers+&+Cheer+Holders+&price=299&image=image/love-page/1-12.webp">
+                <img alt="Rose" src="image/love-page/1-12.webp">
+                <div class="name">Bow Tapers & Cheer Holders</div>
+                <div class="price">RS. 299</div>
+                </a>
+            </div>
+            <div class="product" data-price="2199">
+                <a href="all.html?name=Cheer+Taper+Holders+%7C+Set+of+2&price=2,199&image=image/love-page/1-14.webp">
+                <img alt="Rose" src="image/love-page/1-14.webp">
+                <div class="name">Cheer Taper Holders | Set of 2</div>
+                <div class="price">RS. 2,199</div>
+                </a>
+            </div>
+            <div class="product" data-price="2099">
+                <a href="all.html?name=The+Illume+Collection+%7C+Venetian+Bergamot+%7C+Scented+Candle+Set+%7C+Set+of+3&price=2,099&image=image/love-page/1-15.webp">
+                <img alt="Rose" src="image/love-page/1-15.webp">
+                <div class="name">The Illume Collection | Venetian Bergamot | Scented Candle Set | Set of 3</div>
+                <div class="price">RS. 2,099</div>
+                </a>
+            </div>
+            <div class="product" data-price="3699">
+                <a href="all.html?name=SMini+Bowl+Gift+Set+%7C+Foiled+Mini+Bowl+&+Wax+Tablet&price=3,699&image=image/love-page/1-16.webp">
+                <img alt="Rose" src="image/love-page/1-16.webp">
+                <div class="name">Mini Bowl Gift Set | Foiled Mini Bowl & Wax Tablet</div>
+                <div class="price">RS. 3,699</div>
+                </a>
+            </div>
+            <div class="product" data-price="1499">
+                <a href="all.html?name=The+Illume+Collection+%7C+Night+Jasmine+%7C+Set+of+3&price=1,499&image=image/love-page/1-17.webp">
+                <img alt="Rose" src="image/love-page/1-17.webp">
+                <div class="name">The Illume Collection | Night Jasmine | Set of 3</div>
+                <div class="price">RS. 1,499</div>
+                </a>
+            </div>
+            <div class="product" data-price="3699">
+                <a href="all.html?name=Macaron+Jar+%7C+Red+%7C+Scented+Candle&price=3,699&image=image/love-page/1-18.webp">
+                <img alt="Rose" src="image/love-page/1-18.webp">
+                <div class="name">Macaron Jar | Red | Scented Candle</div>
+                <div class="price">RS. 3,699</div>
+                </a>
+            </div>
+            <div class="product" data-price="749">
+                <a href="all.html?name=Gold+Star+%7C+Oud+&+Amber&price=749&image=image/love-page/1-19.webp">
+                <img alt="Rose" src="image/love-page/1-19.webp">
+                <div class="name">Gold Star | Oud & Amber</div>
+                <div class="price">RS. 749</div>
+                </a>
+            </div>
+            <div class="product" data-price="1499">
+                <a href="all.html?name=Sundance+Aura+%7C+Melon+%7C+Summer+Nectar&price=1,499&image=image/love-page/1-20.webp">
+                <img alt="Rose" src="image/love-page/1-20.webp">
+                <div class="name">Sundance Aura | Melon | Summer Nectar</div>
+                <div class="price">RS. 1,499</div>
+                </a>
+            </div>
+            <div class="product" data-price="999">
+                <a href="all.html?name=Sundance+Aura+%7C+Pink+%7C+Amber+Indulgence&price=999&image=image/love-page/1-21.webp">
+                <img alt="Rose" src="image/love-page/1-21.webp">
+                <div class="name">Sundance Aura | Pink | Amber Indulgence</div>
+                <div class="price">Rs. 999</div>
+                </a>
+            </div>
+            <div class="product" data-price="999">
+                <a href="all.html?name=Royal+Hurricane+%7C+Rouge+%7C+White+Amber+&+Tonka&price=999&image=image/love-page/1-22.webp">
+                <img alt="Rose" src="image/love-page/1-22.webp">
+                <div class="name">Royal Hurricane | Rouge | White Amber & Tonka</div>
+                <div class="price">Rs. 999</div>
+                </a>
+            </div>
+            <div class="product" data-price="799">
+                <a href="all.html?name=Royal+Hurricane+%7C+Smoke+%7C+White+Amber+&+Tonka&price=799&image=image/love-page/1-23.webp">
+                <img alt="Rose" src="image/love-page/1-23.webp">
+                <div class="name">Royal Hurricane | Smoke | White Amber & Tonka</div>
+                <div class="price">Rs. 799</div>
+                </a>
+            </div>
+            <div class="product" data-price="799">
+                <a href="all.html?name=Royal+Rouge+Bowl+with+Lid+%7C+Ruby+%7C+White+Amber+&+Tonka&price=799&image=image/love-page/1.1.webp">
+                <img alt="Rose" src="image/love-page/1-24.webp">
+                <div class="name">Royal Rouge Bowl with Lid | Ruby | White Amber & Tonka</div>
+                <div class="price">Rs. 799</div>
+                </a>
+            </div>
+            <div class="product" data-price="3599">
+                <a href="all.html?name=Initial+A+%7C+Flower+Blossom&price=3,599&image=image/love-page/-125.webp">
+                <img alt="Rose" src="image/love-page/-125.webp">
+                <div class="name">Initial A | Flower Blossom</div>
+                <div class="price">Rs. 3,599</div>
+                </a>
+            </div>
+            <div class="product" data-price="1099">
+                <a href="all.html?name=Daydream+%7C+Blue+%7C+Gardenia+Delight&price=1,099&image=image/love-page/1-26.webp">
+                <img alt="Rose" src="image/love-page/1-26.webp">
+                <div class="name">Daydream | Blue | Gardenia Delight</div>
+                <div class="price">Rs. 1,099</div>
+                </a>
+            </div>
+            <div class="product" data-price="1099">
+                <a href="all.html?name=Daydream+%7C+Green+%7C+Gardenia+Delight&price=1,099&image=image/love-page/1-27.webp">
+                <img alt="Rose" src="image/love-page/1-27.webp">
+                <div class="name">Daydream | Green | Gardenia Delight</div>
+                <div class="price">Rs. 1,099</div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="all.html?name=Daydream+%7C+Pink+%7C+Gardenia+Delight&price=1,099&image=image/love-page/1-28.webp">
+                <img alt="Rose" src="image/love-page/1-28.webp">
+                <div class="name">Daydream | Pink | Gardenia Delight</div>
+                <div class="price">Rs. 1,099</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div id="products1">
+        <h2>Best Sellers</h2>
+        <div class="sliders-container">
+        <button class="arrow left" onclick="prevSlide()">&#8592;</button>
+        <div class="sliders" id="sliders">
+            <div class="product-card">
+                <a href="all.html?name=Flower+Blosoom+%7C+Perfume+Infused+Wax+Tablets+%7C+Set+Of+2&price=995&image=image/main-page/1-1.webp">
+                <img src="image/main-page/1-1.webp" alt="Product 1">
+                <div class="product-name">Flower Blosoom | Perfume Infused Wax Tablets | Set Of 2</div>
+                <div class="product-price">RS. 995</div>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="all.html?name=Red+Sweetheart+%7C+Peony&price=1,799&image=image/main-page/1-2.webp">
+                <img src="image/main-page/1-2.webp" alt="Product 2">
+                <div class="product-name">Red Sweetheart | Peony</div>
+                <div class="product-price">RS. 1,799</div>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="all.html?name=Holiday+Bow+Taper+Candles+%7C+Set+of+2&price=299&image=image/main-page/1-3.webp">
+                <img src="image/main-page/1-3.webp" alt="Product 3">
+                <div class="product-name">Holiday Bow Taper Candles | Set of 2</div>
+                <div class="product-price">RS. 299</div>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="all.html?name=Sundance+Aura+%7C+Pink+%7C+Amber+Indulgence&price=299&image=image/main-page/1-4.webp">
+                <img src="image/main-page/1-4.webp" alt="Product 4">
+                <div class="product-name">Sundance Aura | Pink | Amber Indulgence</div>
+                <div class="product-price">RS. 999</div>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="all.html?name=Sundance+Aura+%7C+Melon+%7C+Summer+Nectar+Form&price=999&image=image/main-page/1-5.webp">
+                <img src="image/main-page/1-5.webp" alt="Product 5">
+                <div class="product-name">Sundance Aura | Melon | Summer Nectar
+                    From</div>
+                <div class="product-price">Rs. 999</div>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="all.html?name=Sundance+Aura+%7C+Blue+%7C+Summer+Nectar+Form&price=999&image=image/main-page/1-6.webp">
+                <img src="image/main-page/1-6.webp" alt="Product 6">
+                <div class="product-name">Sundance Aura | Blue | Summer Nectar
+                    From</div>
+                <div class="product-price">RS. 999</div>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="all.html?name=12+Months+of+Magic+%7C+Shot+Glass+Candles+%7C+Set+of+12&price=2,999&image=image/main-page/1-7.webp">
+                <img src="image/main-page/1-7.webp" alt="Product 7">
+                <div class="product-name">12 Months of Magic | Shot Glass Candles | Set of 12</div>
+                <div class="product-price">RS. 2,999</div>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="all.html?name=Rose+Mini+Bowl+%7C+English+Rose&price=1,199&image=image/main-page/1-8.webp">
+                <img src="image/main-page/1-8.webp" alt="Product 8">
+                <div class="product-name">Rose Mini Bowl | English Rose</div>
+                <div class="product-price">RS. 1,199</div>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="all.html?name=Mini+Bowl+Gift+Set+%7C+Foiled+Mini+Bowl+&+Wax+Tablet&price=1,499&image=image/main-page/1-9.webp">
+              <img src="image/main-page/1-9.webp" alt="Product 9">
+              <div class="product-name">Mini Bowl Gift Set | Foiled Mini Bowl & Wax Tablet</div>
+              <div class="product-price">RS. 1,499</div>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="all.html?name=Lemon+Grass+And+Clove+%7C+Perfume+Infused+Wax+Tablets+%7C+Set+of+2&price=995&image=image/main-page/1-10.webp">
+              <img src="image/main-page/1-10.webp" alt="Product 10">
+              <div class="product-name">Lemon Grass And Clove | Perfume Infused Wax Tablets | Set of 2</div>
+              <div class="product-price">RS. 995</div>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="all.html?name=Trio+Set+&+Big+Red+Heart&price=2,999&image=image/main-page/1-11.webp">
+              <img src="image/main-page/1-11.webp" alt="Product 11">
+              <div class="product-name">Trio Set & Big Red Heart</div>
+              <div class="product-price">RS. 2,999</div>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="all.html?name=Scented+Memories+%7C+Gift+Set&price=1,999&image=image/main-page/1-12.webp">
+              <img src="image/main-page/1-12.webp" alt="Product 12">
+              <div class="product-name">Scented Memories | Gift Set</div>
+              <div class="product-price">RS. 1,999</div>
+                </a>
+            </div>
+        </div>
+        <button class="arrow right" onclick="nextSlide()">&#8594;</button>
+    </div>
+    <footer>
+        <div class="footer">
+          <div class="footer-column">
+              <h3>ABOUT US</h3>
+              <p>D O F T comes from the German word, D ü ft, which translates as experiencing the world through scent. Doft brings you sensuous natural fragrances, handcrafted in timeless glass, that ignite a personal memory of a moment gone by.</p>
+              <div class="social-icons">
+                  <i class="fab fa-instagram"></i>
+              </div>
+          </div>
+          <div class="footer-column">
+            <h3>LEGAL</h3>
+            <p><a href="all-footer/about.html">About Us</a></p>
+            <p><a href="all-footer/contact.html">Contact Us</a></p>
+            <p><a href="all-footer/shiping.html">Shipping Policy</a></p>
+            <p><a href="all-footer/return.html">Returns & Exchange Policy</a></p>
+            <p><a href="all-footer/terms.html">Terms of Service</a></p>
+            <p><a href="all-footer/privacy.html">Privacy Policy</a></p>
+            <p><a href="all-footer/refund.html">Refund policy</a></p>
+        </div>
+          <div class="footer-column newsletter">
+              <h3>NEWSLETTER</h3>
+              <p>Subscribe to receive updates, access to exclusive deals, and more.</p>
+              <input type="email" placeholder="Enter your email address">
+              <button>SUBSCRIBE</button>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          © DOFT CANDLES
+      </div>
+      <div class="whatsapp-icon">
+          <i class="fab fa-whatsapp"></i>
+      </div>
+      </footer>
+    <script src="js/love.js"></script>
+    <script>
+        const filters = document.querySelector('.filters');
+        const products = document.querySelector('.pds');
+        
+        window.addEventListener('scroll', () => {
+            const filtersTop = filters.offsetTop;
+            const productsBottom = products.offsetTop + products.offsetHeight;
+            const scrollPosition = window.pageYOffset;
+        
+            if (scrollPosition > filtersTop && scrollPosition + filters.offsetHeight < productsBottom) {
+                filters.style.position = 'fixed';
+                filters.style.top = '100px'; // Your fixed top value
+                filters.style.bottom = 'auto'; // Important: Reset bottom
+            } else if (scrollPosition + filters.offsetHeight >= productsBottom) {
+                filters.style.position = 'absolute'; // Switch to absolute
+                filters.style.top = productsBottom - filters.offsetHeight + "px"; // Position at the bottom of products
+                filters.style.bottom = 'auto'; // Important: Reset bottom
+            }
+            else{
+                filters.style.position = 'fixed';
+                filters.style.top = '100px';
+            }
+        });
+    </script>
+</body>
+</html>

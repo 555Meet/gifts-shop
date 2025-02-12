@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+    <style>
+        .main {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fff;
+        }
+        /* @media(max-width:768px){
+            section{
+                max-width: 330px;
+            }
+        } */
+        .container {
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 24px;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+        form {
+            margin-top: 20px;
+        }
+        .input-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        input, textarea {
+            width: calc(50% - 10px);
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        textarea {
+            width: calc(100% - 22px);
+            height: 100px;
+            resize: none;
+        }
+        button {
+            width: 100%;
+            padding: 15px;
+            background-color: #c28f95;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 14px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #4a2323;
+        }
+        @media (max-width: 600px) {
+            .input-row {
+                flex-direction: column;
+            }
+            input {
+                width: calc(100% - 22px);
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="../css/footer.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">GET 10% OFF WITH CODE WELCOME10</div>
+        <!-- <div class="navbar">
+            <div class="nav-links">
+                <a href="#">SHOP</a>
+                <a href="#">GIFTS</a>
+                <a href="#">THE LOVE EDIT</a>
+            </div>
+            <div class="logo">- DOFT -</div>
+            <div class="icons">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-shopping-bag"></i>
+            </div>
+        </div> -->
+        <nav class="navbar" id="navbar_one">
+            <!-- Hamburger for mobile -->
+            <div class="hamburger" id="hamburger">
+              <div class="line1"></div>
+              <div class="line1"></div>
+              <div class="line1"></div>
+            </div>
+            <!-- Standard nav for desktop -->
+            <ul class="nav-links desktop-nav">
+              <li><a href="../home.html">SHOP</a></li>
+              <li><a href="../gift.html">GIFTS</a></li>
+              <li><a href="../love.html">THE LOVE GIFT</a></li>
+            </ul>
+            <!-- Additional items in mobile nav -->
+            <ul class="nav-links mobile-nav" id="mobile-nav">
+              <li><a href="#home" id="closeham">X</a></li><br>
+              <li><a href="../home.html">HOME</a></li>
+              <li><hr></li>
+              <li><a href="../gift.html">GIFTS</a></li>
+              <li><hr></li>
+              <li><a href="../love.html">THE LOVE GIFT</a></li>
+              <li><hr></li>
+            </ul>
+            <div class="logo">- DOFT -</div>
+            <div class="icons">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-shopping-bag"></i>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="main">
+            <div class="container">
+                <h1>CONTACT US</h1>
+                <p>Doft Decor LLP</p>
+                <p>10th KM Stone, GT Road PO Dujana, Gautam Budh Nagar, 203207 Dujana Uttar Pradesh, India</p>
+                <p>Email: hello@doftcandles.com</p>
+                <p>Tel: +91 88006 45024</p>
+                <form>
+                    <div class="input-row">
+                        <input type="text" placeholder="Your name" required>
+                        <input type="email" placeholder="Your email" required>
+                    </div>
+                    <textarea placeholder="Your message" required></textarea>
+                    <button type="submit">SEND MESSAGE</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+          <div class="footer-column">
+              <h3>ABOUT US</h3>
+              <p>D O F T comes from the German word, D ü ft, which translates as experiencing the world through scent. Doft brings you sensuous natural fragrances, handcrafted in timeless glass, that ignite a personal memory of a moment gone by.</p>
+              <div class="social-icons">
+                  <i class="fab fa-instagram"></i>
+              </div>
+          </div>
+          <div class="footer-column">
+            <h3>LEGAL</h3>
+            <p><a href="about.html">About Us</a></p>
+            <p><a href="contact.html">Contact Us</a></p>
+            <p><a href="shiping.html">Shipping Policy</a></p>
+            <p><a href="return.html">Returns & Exchange Policy</a></p>
+            <p><a href="terms.html">Terms of Service</a></p>
+            <p><a href="privacy.html">Privacy Policy</a></p>
+            <p><a href="refund.html">Refund policy</a></p>
+        </div>
+          <div class="footer-column newsletter">
+              <h3>NEWSLETTER</h3>
+              <p>Subscribe to receive updates, access to exclusive deals, and more.</p>
+              <input type="email" placeholder="Enter your email address">
+              <button>SUBSCRIBE</button>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          © DOFT CANDLES
+      </div>
+      <div class="whatsapp-icon">
+          <i class="fab fa-whatsapp"></i>
+      </div>
+      </footer>
+      <script src="js/home.js"></script>
+  </body>
+  </html>

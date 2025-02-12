@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+    <title>Details of products</title>
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body onload="loadProductDetails()">
+    <header>
+        <div class="top-bar">GET 10% OFF WITH CODE WELCOME10</div>
+        <!-- <div class="navbar">
+            <div class="nav-links">
+                <a href="#">SHOP</a>
+                <a href="#">GIFTS</a>
+                <a href="#">THE LOVE EDIT</a>
+            </div>
+            <div class="logo">- DOFT -</div>
+            <div class="icons">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-shopping-bag"></i>
+            </div>
+        </div> -->
+        <nav class="navbar" id="navbar_one">
+            <!-- Hamburger for mobile -->
+            <div class="hamburger" id="hamburger">
+              <div class="line1"></div>
+              <div class="line1"></div>
+              <div class="line1"></div>
+            </div>
+            <!-- Standard nav for desktop -->
+            <ul class="nav-links desktop-nav">
+              <li><a href="home.html">SHOP</a></li>
+              <li><a href="gift.html">GIFTS</a></li>
+              <li><a href="love.html">THE LOVE GIFT</a></li>
+            </ul>
+            <!-- Additional items in mobile nav -->
+            <ul class="nav-links mobile-nav" id="mobile-nav">
+              <li><a href="#home" id="closeham">X</a></li><br>
+              <li><a href="home.html">HOME</a></li>
+              <li><hr></li>
+              <li><a href="gift.html">GIFTS</a></li>
+              <li><hr></li>
+              <li><a href="love.html">THE LOVE GIFT</a></li>
+              <li><hr></li>
+            </ul>
+            <div class="logo">- DOFT -</div>
+            <div class="icons">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-shopping-bag"></i>
+            </div>
+        </nav>
+    </header>
+    <section>
+    <div class="container">
+        <div class="image-section">
+         <img alt="A rose gold glass candle with three lit wicks, placed on a rock with a pink rose beside it. The background is a gradient of pink shades." height="400" src="" width="600"/>
+        </div>
+        <div class="details-section">
+         <h1 class="name">SECRET WHISPERS GLASS CANDLE | ROSE GOLD</h1>
+         <h2 class="price">RS. 1,799</h2>
+         <p class="tax-info">(MRP Incl. of all taxes)</p>
+         <div class="option">
+          <label for="color">Color:</label>
+          <span class="value">Rose Gold</span>
+         </div>
+         <div class="option">
+          <label for="scent">Scent:</label>
+          <span class="value">Velvet Rose</span>
+         </div>
+         <div class="quantity">
+          <button> - </button>
+          <input type="text" value="1"/>
+          <button> + </button>
+         </div>
+         <button class="add-to-cart">ADD TO CART</button>
+         <button class="buy-it-now">BUY IT NOW</button>
+         <div class="shipping">SHIPPING &amp; DELIVERY
+            <i class="fas fa-plus"></i>
+         </div>
+         <p class="description">
+          Experience a delightful surprise with our unique U-shaped glass candle, available in swirls of Pearl White and Rose Gold. This candle holds a secret message that reveals itself as the candle burns down. Indulge in the captivating fragrance blend of rose and musk, with notes of Citrus.
+         </p>
+         <a href="home.html" class="back-btn">Back to Products</a>
+        </div>
+    </div>
+    </section>
+    <div id="products1">
+        <h2>Best Sellers</h2>
+        <div class="sliders-container">
+        <button class="arrow left" onclick="prevSlide()">&#8592;</button>
+        <div class="sliders" id="sliders">
+            <div class="product-card">
+                <img src="image/main-page/1-1.webp" alt="Product 1">
+                <div class="product-name">Product 1</div>
+                <div class="product-price">$20.00</div>
+            </div>
+            <div class="product-card">
+                <img src="image/main-page/1-2.webp" alt="Product 2">
+                <div class="product-name">Product 2</div>
+                <div class="product-price">$25.00</div>
+            </div>
+            <div class="product-card">
+                <img src="image/main-page/1-3.webp" alt="Product 3">
+                <div class="product-name">Product 3</div>
+                <div class="product-price">$30.00</div>
+            </div>
+            <div class="product-card">
+                <img src="image/main-page/1-4.webp" alt="Product 4">
+                <div class="product-name">Product 4</div>
+                <div class="product-price">$35.00</div>
+            </div>
+            <div class="product-card">
+                <img src="image/main-page/1-5.webp" alt="Product 5">
+                <div class="product-name">Product 5</div>
+                <div class="product-price">$40.00</div>
+            </div>
+            <div class="product-card">
+                <img src="image/main-page/1-6.webp" alt="Product 6">
+                <div class="product-name">Product 6</div>
+                <div class="product-price">$45.00</div>
+            </div>
+            <div class="product-card">
+                <img src="image/main-page/1-7.webp" alt="Product 7">
+                <div class="product-name">Product 7</div>
+                <div class="product-price">$50.00</div>
+            </div>
+            <div class="product-card">
+                <img src="image/main-page/1-8.webp" alt="Product 8">
+                <div class="product-name">Product 8</div>
+                <div class="product-price">$55.00</div>
+            </div>
+        </div>
+        <button class="arrow right" onclick="nextSlide()">&#8594;</button>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+          <div class="footer-column">
+              <h3>ABOUT US</h3>
+              <p>D O F T comes from the German word, D ü ft, which translates as experiencing the world through scent. Doft brings you sensuous natural fragrances, handcrafted in timeless glass, that ignite a personal memory of a moment gone by.</p>
+              <div class="social-icons">
+                  <i class="fab fa-instagram"></i>
+              </div>
+          </div>
+          <div class="footer-column">
+              <h3>LEGAL</h3>
+              <p><a href="all-footer/about.html">About Us</a></p>
+              <p><a href="all-footer/contact.html">Contact Us</a></p>
+              <p><a href="all-footer/shiping.html">Shipping Policy</a></p>
+              <p><a href="all-footer/return.html">Returns & Exchange Policy</a></p>
+              <p><a href="all-footer/terms.html">Terms of Service</a></p>
+              <p><a href="all-footer/privacy.html">Privacy Policy</a></p>
+              <p><a href="all-footer/refund.html">Refund policy</a></p>
+          </div>
+          <div class="footer-column newsletter">
+              <h3>NEWSLETTER</h3>
+              <p>Subscribe to receive updates, access to exclusive deals, and more.</p>
+              <input type="email" placeholder="Enter your email address">
+              <button>SUBSCRIBE</button>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          © DOFT CANDLES
+      </div>
+      <div class="whatsapp-icon">
+          <i class="fab fa-whatsapp"></i>
+      </div>
+      </footer>
+
+
+        <script>
+        function getQueryParams() {
+            const params = new URLSearchParams(window.location.search);
+            return {
+                name: params.get('name'),
+                price: params.get('price'),
+                image: params.get('image'),
+            };
+        }
+
+        function loadProductDetails() {
+            const { name, price, image } = getQueryParams();
+
+            if (name && price && image) {
+                document.querySelector(".details-section h1").textContent = decodeURIComponent(name);
+                document.querySelector(".details-section h2").textContent = `RS. ${price}`;
+                document.querySelector(".image-section img").src = decodeURIComponent(image);
+                document.querySelector(".image-section img").alt = name;
+            }
+        }
+    </script> 
+    <script src="js/all.js"></script>
+</body>
+</html>
